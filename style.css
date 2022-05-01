@@ -1,0 +1,75 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: dodgerblue;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  font-family: Poppins, serif;
+  font-size: 100%;
+}
+div, h1, h2, h3, p, img {
+  margin: 0;
+  padding: 0;
+}
+h1{
+  align: left;
+}
+.container {
+  height:650px;
+  width:1200px;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+.displayQuestions{  
+  padding-top: 5px;
+  padding-left: 5px;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+.displaySection {		
+  text-align:center;
+  padding: 0.5rem;
+  height:550px;
+  width: 400px;
+  float: left;
+}
+.location{
+  font-size: 1.53em;
+  background: hotpink;
+}
+#map {
+  height: 560px; 
+  width: 700px;
+  float: right;
+}
+#Location1, #Location2, #Location3, #Location4,#Location5, #results{
+  display: none;
+}
+.timer{
+  font-size: 2em;
+}
+#results{
+
+}
+/*animation*/
+@keyframes result {
+  0%{
+    color: white;
+  }
+  30%{
+    letter-spacing: 0.3em;
+  }
+  65%{
+    letter-spacing: 0.2em;
+  }
+  95%{
+    letter-spacing: 0.1em;
+  }
+
+}
