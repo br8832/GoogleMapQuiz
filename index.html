@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;900&display=swap" rel="stylesheet">
+  </head>
+  <!-- make sure the map is loaded before doing anything -->
+  <body onload="Game()">
+      <div class="container">
+          <!--container to display results and questions-->
+        <div class="displaySection" >
+          <!--specify to the user to double click instead of single click-->
+          <h1> Map Quiz. Please double click on the map the location of:  </h1>
+          <!-- tell the user which location to find -->
+          <div class="displayQuestions" id="Location1">
+            <p class="location"></p>
+          </div>
+          <div class="displayQuestions" id="Location2">
+            <p class="location"></p>
+          </div>
+          <div class="displayQuestions" id="Location3">
+            <p class="location"></p>
+          </div>
+          <div class="displayQuestions" id="Location4">
+            <p class="location"></p>
+          </div>
+          <div class="displayQuestions" id="Location5">
+            <p class="location"></p>
+          </div>
+          <div class="displayQuestions" id="results">
+            <p class="location"></p>
+          </div>
+          <div style="display: flex" class="timer">
+            <p>00:00:00</p>
+          </div>
+          <!-- a running timer -->
+          <div style="none" class= "timer">
+            <p></p>
+          </div>
+        </div>
+    <div id="map"></div>
+    </div>
+    <div class="container">
+                            <!-- a default high score -->
+      <h1 style="font-weight:400;">High Score: 00:20:00</h1>
+    </div>
+  </body>
+  <iframe src="https://calendar.google.com/calendar/htmlembed?src=addressbook%23contacts%40group.v.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>   
+</html>
